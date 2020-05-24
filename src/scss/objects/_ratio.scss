@@ -1,0 +1,34 @@
+// http://alistapart.com/article/creating-intrinsic-ratios-for-video
+
+.ratio {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    padding-bottom: 100%; // ratio 1 : 1
+    width: 100%;
+    content: '';
+  }
+
+  & img,
+  iframe,
+  embed,
+  object {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.ratio__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

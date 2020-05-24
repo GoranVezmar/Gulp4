@@ -1,0 +1,12 @@
+.button {
+  display: inline-block;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

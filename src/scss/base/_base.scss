@@ -1,0 +1,65 @@
+html {
+  font-size: 21px;
+  @include mq($colossal) {
+    font-size: 18px;
+  }
+  @include mq($gigantic) {
+    font-size: 16px;
+  }
+  @include mq($huge) {
+    font-size: 15px;
+  }
+  @include mq($large) {
+    font-size: 14px;
+  }
+  @include mq($medium) {
+    font-size: 13px;
+  }
+  @include mq($small) {
+    font-size: 12px;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+b,
+strong {
+  font-weight: $bold;
+}
+
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $black;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+  touch-action: manipulation;
+}
